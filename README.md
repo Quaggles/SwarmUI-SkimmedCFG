@@ -11,17 +11,24 @@ A [SwarmUI](https://github.com/mcmonkeyprojects/SwarmUI/) extension that adds pa
 * Initial Release
 </details>
 
-## Installation
+## Installation (Simple)
+1. Update SwarmUI first, if you have an old version this extension may not work
+2. In SwarmUI go to the Server/Extensions tab
+3. Find SkimmedCFG in the list and click the 'Install' button
+4. Refresh the page and go back to the generate tab, if you see the parameters then the required ComfyUI dependencies are installed and you can start using the extension, otherwise continue below.
+5. If the `Skimmed_CFG` custom node is not installed in the backend an install button will be shown in the parameter group, install it and follow the prompts
+
+![image](https://github.com/user-attachments/assets/9f11e371-a51d-4fa0-b9eb-d0bfeced9a60)
+
+6. Now the parameters should appear and you are good to go
+
+## Installation (Advanced)
 1. Update SwarmUI first, if you have an old version this extension may not work
 2. Shutdown SwarmUI
 3. Open a cmd/terminal window in `SwarmUI\src\Extensions`
 4. Run `git clone https://github.com/Quaggles/SwarmUI-SkimmedCFG.git`
 5. Run `SwarmUI\update-windows.bat` or `SwarmUI\update-linuxmac.sh` to recompile SwarmUI
-6. If the `Skimmed_CFG` custom node is not installed in the backend an install button will be shown in the parameter group, install it and follow the prompts
-
-![image](https://github.com/user-attachments/assets/9f11e371-a51d-4fa0-b9eb-d0bfeced9a60)
-
-7. Now the parameters should appear and you are good to go
+6. Launch SwarmUI and follow on from [Step 4 of Installation (Simple)](#installation-simple)
 
 
 ## Updating
