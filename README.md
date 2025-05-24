@@ -6,6 +6,13 @@ A [SwarmUI](https://github.com/mcmonkeyprojects/SwarmUI/) extension that adds pa
 
 ## Changelog
 <details>
+  <summary>25 May 2025</summary>
+
+<b><i>Make sure you update SwarmUI to at least v0.9.6.1 before updating to this version of SkimmedCFG as it uses new APIs</b></i>
+
+* Fixed code calling internal T2IParamInput.ValuesInput field that will be removed in a future SwarmUI update
+</details>
+<details>
   <summary>19 October 2024</summary>
 
 * Initial Release
