@@ -234,7 +234,8 @@ public class SkimmedCFGExtension : Extension
             if (ModeUsedParams.TryGetValue(nodeName, out var usedParams))
                 foreach (var param in ModeUsedParams.SelectMany(x => x.Value))
                     if (!usedParams.Contains(param))
-                        g.UserInput.ValuesInput.Remove(param.ID);
+                        if (g.UserInput.TryGetRaw(param, out _))
+                            g.UserInput.Remove(param);
 
             string node = g.CreateNode(nodeName, arguments);
             g.FinalModel = [node, 0];
